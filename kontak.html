@@ -1,33 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <title>Malasngoding.com - Kirim Email Mengunakan PHP</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Lowongan Kerja Staf IT</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+<style>
+  body {
+      background: linear-gradient(to right, #345474, #b0cae7); /* Gradient dari biru ke kuning lembut */
+      color: #333; /* Warna teks yang lebih gelap untuk kontras */
+  }
+  .container {
+      background-color: #f0eff7; /* Warna latar belakang kontainer putih */
+      border-radius: 8px; /* Sudut membulat pada kontainer */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan untuk efek kedalaman */
+      padding: 20px; /* Menambahkan padding di dalam kontainer */
+      margin-top: 20px; /* Jarak atas dari elemen lain */
+  }
+</style>
 <body>
- 
-<div class="container mt-3">
-  <h2>Kirim Email Mengunakan PHP</h2>
-  <form action="kirim.php" method="post">
-    <div class="mb-3 mt-3">
-      <label>Email Tujuan:</label>
-      <input type="email" class="form-control"  placeholder="Email Tujuan" name="email" required>
-    </div>
-    <div class="mb-3 mt-3">
-      <label>Judul Pesan:</label>
-      <input type="text" class="form-control"  placeholder="Judul Pesan" name="judul" required>
-    </div>
-    <div class="mb-3 mt-3">
-      <label>Isi Pesan:</label>
-      <textarea class="form-control" name="pesan" placeholder="Pesan" required></textarea>
-    </div>
-   
-    <button type="submit" class="btn btn-primary">Kirim</button>
-  </form>
-</div>
- 
-</body>
-</html>
+    <!-- Navbar -->
+    
+    <div class="container mt-5">
+        <h1>Kontak Kami</h1>
+        <form id='contactForm'>
+            <div class='form-group'>
+                <label for='name'>Nama:</label>
+                <input type='text' id='name' class='form-control' required />
+            </div>
+
+            <div class='form-group'>
+                <label for='email'>Email:</label>
+                <input type='email' id='email' class='form-control' required />
+            </div>
+
+            <div class='form-group'>
+                <label for='message'>Pesan:</label>
+                <textarea id='message' class='form-control' required></textarea>
+            </div>
+
+            <button type='submit' class='btn btn-primary'>Kirim Pesan</button>
+        </form>
+
+        <!-- JavaScript untuk menangani pengiriman form -->
+        <!-- Tambahkan di file script.js -->
+        
+        </script src='js/script.js'></script> 
+      </body> 
+      </html> 
